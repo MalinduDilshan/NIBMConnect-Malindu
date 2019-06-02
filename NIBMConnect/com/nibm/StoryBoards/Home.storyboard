@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bmy-dv-fFc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="Znz-By-WtL">
+            <objects>
+                <viewController id="e0z-Wl-uRJ" customClass="HomeViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QTy-X8-ykI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="journey" translatesAutoresizingMaskIntoConstraints="NO" id="YbH-tv-fjI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="slM-gK-EKa">
+                                <rect key="frame" x="167" y="228" width="41" height="211"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kT-rU-DDW">
+                                <rect key="frame" x="94" y="342" width="153" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="Cic-ed-sRf"/>
+                                    <constraint firstAttribute="width" constant="153" id="DUB-tB-11W"/>
+                                </constraints>
+                                <state key="normal" title="My Profile" image="profile"/>
+                                <connections>
+                                    <action selector="goToMyProfileFunc:" destination="e0z-Wl-uRJ" eventType="touchUpInside" id="nmQ-AM-RHZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBr-JN-NLP">
+                                <rect key="frame" x="20" y="506" width="153" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="bvn-8l-jXz"/>
+                                    <constraint firstAttribute="width" constant="153" id="f8U-0X-pO3"/>
+                                </constraints>
+                                <state key="normal" title="Home Work" image="homework"/>
+                                <connections>
+                                    <action selector="goToHomeWorkFunc:" destination="e0z-Wl-uRJ" eventType="touchUpInside" id="9dU-fk-awQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Students" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFD-P7-EJy">
+                                <rect key="frame" x="181" y="247" width="79" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqL-LG-MY6">
+                                <rect key="frame" x="20" y="184" width="153" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="L3n-nd-3np"/>
+                                    <constraint firstAttribute="height" constant="150" id="bRY-a3-rSl"/>
+                                </constraints>
+                                <state key="normal" title="Students Data" image="students"/>
+                                <connections>
+                                    <action selector="goToStudentsFunc:" destination="e0z-Wl-uRJ" eventType="touchUpInside" id="Oy6-qv-TQx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homework" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8f-fm-8Yb">
+                                <rect key="frame" x="181" y="570.5" width="95" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uS4-60-W8I">
+                                <rect key="frame" x="255" y="406.5" width="86.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CBr-JN-NLP" firstAttribute="leading" secondItem="lZw-CH-vvl" secondAttribute="leading" constant="20" id="23f-bN-5tF"/>
+                            <constraint firstItem="YbH-tv-fjI" firstAttribute="trailing" secondItem="lZw-CH-vvl" secondAttribute="trailing" id="7JS-8a-ge9"/>
+                            <constraint firstItem="PFD-P7-EJy" firstAttribute="centerY" secondItem="pqL-LG-MY6" secondAttribute="centerY" id="7mS-L3-XSK"/>
+                            <constraint firstItem="PFD-P7-EJy" firstAttribute="leading" secondItem="pqL-LG-MY6" secondAttribute="trailing" constant="8" id="8xd-qc-mU0"/>
+                            <constraint firstItem="CBr-JN-NLP" firstAttribute="top" secondItem="slM-gK-EKa" secondAttribute="bottom" constant="67" id="CeW-Dn-cWI"/>
+                            <constraint firstAttribute="bottom" secondItem="YbH-tv-fjI" secondAttribute="bottom" id="Cuk-JN-Ecf"/>
+                            <constraint firstItem="YbH-tv-fjI" firstAttribute="leading" secondItem="lZw-CH-vvl" secondAttribute="leading" id="DxL-dJ-KEv"/>
+                            <constraint firstItem="CBr-JN-NLP" firstAttribute="top" secondItem="1kT-rU-DDW" secondAttribute="bottom" constant="11" id="IQB-or-tSK"/>
+                            <constraint firstItem="t8f-fm-8Yb" firstAttribute="leading" secondItem="CBr-JN-NLP" secondAttribute="trailing" constant="8" id="M8I-E4-DlK"/>
+                            <constraint firstItem="YbH-tv-fjI" firstAttribute="top" secondItem="QTy-X8-ykI" secondAttribute="top" id="MJe-9x-tWB"/>
+                            <constraint firstItem="slM-gK-EKa" firstAttribute="centerY" secondItem="QTy-X8-ykI" secondAttribute="centerY" id="OHR-F9-u5z"/>
+                            <constraint firstItem="slM-gK-EKa" firstAttribute="centerX" secondItem="QTy-X8-ykI" secondAttribute="centerX" id="PkP-Bk-Rcj"/>
+                            <constraint firstItem="1kT-rU-DDW" firstAttribute="leading" secondItem="lZw-CH-vvl" secondAttribute="leading" constant="94" id="SmJ-0e-fUG"/>
+                            <constraint firstItem="pqL-LG-MY6" firstAttribute="leading" secondItem="lZw-CH-vvl" secondAttribute="leading" constant="20" id="VFo-vM-p90"/>
+                            <constraint firstItem="t8f-fm-8Yb" firstAttribute="centerY" secondItem="CBr-JN-NLP" secondAttribute="centerY" id="dSl-57-Y06"/>
+                            <constraint firstItem="uS4-60-W8I" firstAttribute="leading" secondItem="1kT-rU-DDW" secondAttribute="trailing" constant="8" id="eZ5-Sj-moe"/>
+                            <constraint firstItem="1kT-rU-DDW" firstAttribute="top" secondItem="pqL-LG-MY6" secondAttribute="bottom" constant="8" id="flN-jR-wnu"/>
+                            <constraint firstItem="pqL-LG-MY6" firstAttribute="top" secondItem="lZw-CH-vvl" secondAttribute="top" constant="120" id="hga-nD-8UT"/>
+                            <constraint firstItem="slM-gK-EKa" firstAttribute="centerY" secondItem="YbH-tv-fjI" secondAttribute="centerY" id="oxz-9X-fBA"/>
+                            <constraint firstItem="slM-gK-EKa" firstAttribute="leading" secondItem="lZw-CH-vvl" secondAttribute="leading" constant="167" id="pur-Fb-7yR"/>
+                            <constraint firstItem="uS4-60-W8I" firstAttribute="centerY" secondItem="1kT-rU-DDW" secondAttribute="centerY" id="s4q-IR-h1R"/>
+                            <constraint firstItem="slM-gK-EKa" firstAttribute="centerX" secondItem="YbH-tv-fjI" secondAttribute="centerX" id="vZ9-gt-fP1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lZw-CH-vvl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bmS-mi-0hJ">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="DwJ-CT-kIN">
+                            <connections>
+                                <action selector="signOutFunc:" destination="e0z-Wl-uRJ" id="FQi-eW-QEL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="goToHomeWork" destination="CBr-JN-NLP" id="q7K-fO-gqg"/>
+                        <outlet property="goToMyProfile" destination="1kT-rU-DDW" id="yXt-xg-dJP"/>
+                        <outlet property="goToStudents" destination="pqL-LG-MY6" id="xLM-5p-cpY"/>
+                        <outlet property="homework" destination="t8f-fm-8Yb" id="IcZ-sM-A7f"/>
+                        <outlet property="profile" destination="uS4-60-W8I" id="YHa-Di-zGL"/>
+                        <outlet property="signOut" destination="DwJ-CT-kIN" id="Ci7-UT-dpU"/>
+                        <outlet property="students" destination="PFD-P7-EJy" id="wWd-WM-Qyd"/>
+                        <segue destination="nmt-hd-QeN" kind="presentation" identifier="showStudents" modalTransitionStyle="flipHorizontal" id="APz-Fm-x6W"/>
+                        <segue destination="NZy-iZ-6fl" kind="presentation" identifier="showMyProfile" modalTransitionStyle="flipHorizontal" id="hhT-yN-aoZ"/>
+                        <segue destination="5Oo-pF-1dI" kind="presentation" identifier="showHomeWork" modalTransitionStyle="flipHorizontal" id="SEW-sF-DRL"/>
+                        <segue destination="xzB-Kf-DAe" kind="show" identifier="showLogin" id="5VP-VR-gTx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J9G-3u-lyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.97101449275374" y="45.535714285714285"/>
+        </scene>
+        <!--Student-->
+        <scene sceneID="PhG-8v-qJA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Student" id="nmt-hd-QeN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ie2-Fh-y4j"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngk-Ou-6MH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1411" y="-224"/>
+        </scene>
+        <!--MyProfile-->
+        <scene sceneID="MSC-l3-jcg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyProfile" id="NZy-iZ-6fl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aIG-rC-1ac"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4R-EB-5Ht" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412" y="-94"/>
+        </scene>
+        <!--HomeWork-->
+        <scene sceneID="ODe-Rf-liY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeWork" id="5Oo-pF-1dI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="muk-2Y-fig"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpB-Va-qWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="155"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="cl2-sa-883">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="xzB-Kf-DAe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8tp-3I-qhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1411" y="311"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jgb-Ld-mZJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bmy-dv-fFc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xxx-Nq-dA1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e0z-Wl-uRJ" kind="relationship" relationship="rootViewController" id="TJJ-W1-KoC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngO-8t-Fs7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152.17391304347828" y="45.535714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homework" width="800" height="800"/>
+        <image name="journey" width="670" height="1035"/>
+        <image name="profile" width="512" height="512"/>
+        <image name="students" width="720" height="720"/>
+    </resources>
+</document>

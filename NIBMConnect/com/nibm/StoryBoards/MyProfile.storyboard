@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Kt-ee-MgS">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Profile View Controller-->
+        <scene sceneID="CUp-qR-5cS">
+            <objects>
+                <viewController id="nLk-yu-0F1" customClass="MyProfileViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lnC-fN-6cB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desert" translatesAutoresizingMaskIntoConstraints="NO" id="KlW-Db-wVi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic" translatesAutoresizingMaskIntoConstraints="NO" id="2j7-ak-SkW">
+                                <rect key="frame" x="120" y="302" width="173" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="FBy-kR-SVd"/>
+                                    <constraint firstAttribute="height" constant="173" id="Tio-ps-Fcp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E A Malindu Dilshan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lce-MR-3Ab">
+                                <rect key="frame" x="26" y="505" width="362" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 years old" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wt-do-DZQ">
+                                <rect key="frame" x="26" y="569" width="362" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+9471 517 25 24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zc7-WR-6Sd">
+                                <rect key="frame" x="26" y="601" width="362" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="394/C Gunasekara Road, Heiyanthuduwa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD6-4p-b1h">
+                                <rect key="frame" x="26" y="537" width="362" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KlW-Db-wVi" secondAttribute="bottom" id="29b-bF-giH"/>
+                            <constraint firstItem="KlW-Db-wVi" firstAttribute="top" secondItem="lnC-fN-6cB" secondAttribute="top" id="C0t-as-6Uy"/>
+                            <constraint firstItem="iDA-j6-iwh" firstAttribute="trailing" secondItem="lce-MR-3Ab" secondAttribute="trailing" constant="26" id="JKY-1s-EMU"/>
+                            <constraint firstItem="iDA-j6-iwh" firstAttribute="trailing" secondItem="Zc7-WR-6Sd" secondAttribute="trailing" constant="26" id="ONc-gz-fEr"/>
+                            <constraint firstItem="lce-MR-3Ab" firstAttribute="top" secondItem="2j7-ak-SkW" secondAttribute="bottom" constant="30" id="WFC-AK-8lH"/>
+                            <constraint firstItem="iD6-4p-b1h" firstAttribute="top" secondItem="lce-MR-3Ab" secondAttribute="bottom" constant="8" id="WdM-z4-ge1"/>
+                            <constraint firstItem="KlW-Db-wVi" firstAttribute="trailing" secondItem="iDA-j6-iwh" secondAttribute="trailing" id="XSw-SM-Lro"/>
+                            <constraint firstItem="6wt-do-DZQ" firstAttribute="leading" secondItem="iDA-j6-iwh" secondAttribute="leading" constant="26" id="Xob-1b-ZTN"/>
+                            <constraint firstItem="6wt-do-DZQ" firstAttribute="top" secondItem="iD6-4p-b1h" secondAttribute="bottom" constant="8" id="e6Y-rS-jZi"/>
+                            <constraint firstItem="lce-MR-3Ab" firstAttribute="leading" secondItem="iDA-j6-iwh" secondAttribute="leading" constant="26" id="foj-17-ID4"/>
+                            <constraint firstItem="iD6-4p-b1h" firstAttribute="leading" secondItem="iDA-j6-iwh" secondAttribute="leading" constant="26" id="fwH-xr-eed"/>
+                            <constraint firstItem="2j7-ak-SkW" firstAttribute="top" secondItem="iDA-j6-iwh" secondAttribute="top" constant="214" id="psD-hi-u85"/>
+                            <constraint firstItem="KlW-Db-wVi" firstAttribute="leading" secondItem="iDA-j6-iwh" secondAttribute="leading" id="q3M-zx-0YV"/>
+                            <constraint firstItem="iDA-j6-iwh" firstAttribute="trailing" secondItem="6wt-do-DZQ" secondAttribute="trailing" constant="26" id="rUN-DN-D8o"/>
+                            <constraint firstItem="Zc7-WR-6Sd" firstAttribute="leading" secondItem="iDA-j6-iwh" secondAttribute="leading" constant="26" id="uu1-vN-WmA"/>
+                            <constraint firstItem="Zc7-WR-6Sd" firstAttribute="top" secondItem="6wt-do-DZQ" secondAttribute="bottom" constant="8" id="yVr-LB-GXD"/>
+                            <constraint firstItem="2j7-ak-SkW" firstAttribute="leading" secondItem="iDA-j6-iwh" secondAttribute="leading" constant="120" id="yfH-Xe-qtf"/>
+                            <constraint firstItem="iDA-j6-iwh" firstAttribute="trailing" secondItem="iD6-4p-b1h" secondAttribute="trailing" constant="26" id="zF7-nz-Qsc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iDA-j6-iwh"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="CJk-XB-PMi">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="dUN-Sp-Joe">
+                            <connections>
+                                <action selector="closeFunc:" destination="nLk-yu-0F1" id="d5i-X3-0tj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="close" destination="dUN-Sp-Joe" id="5ir-v0-aVh"/>
+                        <outlet property="profilePic" destination="2j7-ak-SkW" id="QtN-Fr-V0u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N0w-eM-OCx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.9710144927537" y="-330.13392857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Qe-EI-pbT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Kt-ee-MgS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UDV-vl-QSM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nLk-yu-0F1" kind="relationship" relationship="rootViewController" id="2x6-pF-s3i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pG-jq-KGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147.82608695652175" y="-330.13392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="desert" width="157.91999816894531" height="280.79998779296875"/>
+        <image name="profilePic" width="400" height="400"/>
+    </resources>
+</document>

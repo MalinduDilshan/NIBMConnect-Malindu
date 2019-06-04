@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import GoogleSignIn
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         Thread.sleep(forTimeInterval: 2.0)
+        IQKeyboardManager.shared.enable = true
         return true
     }
     
@@ -37,7 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                  sourceApplication: sourceApplication,
                                                  annotation: annotation)
     }
-    
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
         // ...

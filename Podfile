@@ -11,4 +11,5 @@ target 'NIBMConnect' do
     pod 'Firebase/Database'
     pod 'GoogleSignIn'
     pod 'Kingfisher', '~> 4.0'
+    pod 'IQKeyboardManagerSwift'
 end

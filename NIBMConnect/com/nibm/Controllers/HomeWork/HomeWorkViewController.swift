@@ -45,7 +45,7 @@ class HomeWorkViewController: UIViewController {
     }
     
     @IBAction func closeFunc(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+         self.performSegue(withIdentifier: "goToHome", sender: nil)
     }
 }
 

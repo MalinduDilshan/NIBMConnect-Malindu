@@ -33,7 +33,7 @@ class ForgetPasswordViewController: UIViewController {
                 return
             }
             else{
-                self.alert(message: "Rest password exceed limit")
+                self.alert(message: "Something went wrong")
             }
         }
     }

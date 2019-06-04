@@ -87,11 +87,20 @@
                         <outlet property="close" destination="1dR-3I-VHZ" id="oNt-dT-UqW"/>
                         <outlet property="homeworkTableView" destination="6SG-45-GWV" id="jgJ-Wf-ggo"/>
                         <segue destination="jwP-Iz-zG7" kind="show" identifier="showHomeWorkDetails" id="UAK-xj-MlR"/>
+                        <segue destination="52N-En-WWS" kind="show" identifier="goToHome" id="Mk4-zD-rFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIg-X1-8rn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1102.8985507246377" y="-298.66071428571428"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="blV-ER-prO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="52N-En-WWS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJY-Uq-Eq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="-43"/>
         </scene>
         <!--Home Work Details View Controller-->
         <scene sceneID="FsI-ZK-Aj2">
@@ -184,6 +193,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="desert" width="157.91999816894531" height="280.79998779296875"/>
+        <image name="desert" width="329" height="585"/>
     </resources>
 </document>
